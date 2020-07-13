@@ -1,0 +1,19 @@
+ [{
+         "id": "1",
+         "headline": "Information",
+         "links": [
+             "Vin-blog´en",
+             "Månedens drue",
+             "Site Map",
+             "Black Friday´s Wine Bar"
+         ]
+     },
+     {
+         "id": "2",
+         "headline": "Kontakt",
+         "links": [
+            "pia@creawebdev.dk"
+        ]
+     }
+
+ ]

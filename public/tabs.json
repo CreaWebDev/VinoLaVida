@@ -1,0 +1,17 @@
+[
+    {
+        "id": "01",
+        "tabName": "Kendetegn",
+        "tabHeadline": "Kend druen på disse karakteristika"
+    },
+    {
+        "id": "02",
+        "tabName": "Historie",
+        "tabHeadline": "Lidt nyttig baggrundsviden om druen"
+    },
+    {
+        "id": "03",
+        "tabName": "Smagstips",
+        "tabHeadline": "Tips og inspiration til smagning sammen med mad"
+    }
+]
