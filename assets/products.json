@@ -1,0 +1,164 @@
+[{
+        "id": "100",
+        "color": "Røde",
+        "class": "small",
+        "img_url": "/images/grapes/Carmenere.png",
+        "title": "Carmenere",
+        "tags": "#Blådrue #Mediumkrop #Blødetanniner",
+        "info": "Denne drue giver mellemkraftige vine. Mere info følger",
+        "details": [
+            "Hindbær, peber, blomme & Vanille",
+            "Mellemkraftig krop",
+            "Bløde Tanniner",
+            "Urteagtig, røgsmag og jordtoner"
+        ],
+        "tabFeatures": "Smag af hindbær, peber, blomme & vanille. Smag efter de bløde tanniner. Tanniner er garvesyren, som giver tørhed i ganen. Druen kan også have en urteagtig og røget smag, jord.",
+        "tabHistory": "Carmenere druen er Chiles nationaldrue.",
+        "tabTasting": "Carmenere passer til rødt kød, middelhavskøkkenet."
+    },
+    {
+        "id": "200",
+        "color": "Hvide",
+        "class": "small",
+        "img_url": "/images/grapes/PinotGris.png",
+        "title": "Pinot Gris/Grigio",
+        "tags": "#Hviddrue #Letkrop",
+        "info": "Denne drue giver mellem/lette vine.",
+        "details": [
+            "Fersken, citron, melon & mandel",
+            "Mellemkraftig krop",
+            "Tør",
+            "Mellemhøj syre"
+        ],
+        "tabFeatures": "Smag af fersken, citron, melon & mandel. Smag efter de bløde tanniner. Tanniner er garvesyren, som giver tørhed i ganen. Druen kan også have en urteagtig og røget smag, jord.",
+        "tabHistory": "Pinot Gris druen er oprindelig fra.....info følger",
+        "tabTasting": "Denne drue passer til fisk, som de fleste hvide vine gør. Kan dog også nydes som aperitif"
+    },
+    {
+        "id": "300",
+        "color": "Røde",
+        "class": "small",
+        "img_url": "/images/grapes/Pinotnoir.png",
+        "title": "Pinot Noir",
+        "tags": "#Røddrue #Letkrop",
+        "info": "Denne drue giver lette vine",
+        "details": [
+            "Kirsebær, hindbær, kanel & anis",
+            "Let krop"
+        ],
+        "tabFeatures": "Smagen af kirsebær, hindbær, kanel & anis findes i denne drue",
+        "tabHistory": "Pinot Noir druen er kendetegnende for Californiens nordlige vindistrikter, 'Californian Cab'.",
+        "tabTasting": "Passer som aperitif eller til retter, hvor vinen ikke må være for dominerende."
+    
+    },
+    {
+        "id": "400",
+        "color": "Hvide",
+        "class": "small",
+        "img_url": "/images/grapes/Chardonnay.png",
+        "title": "Chardonnay",
+        "tags": "#Hviddrue #Tungkrop",
+        "info": "Denne drue giver fed, frugtrig vin",
+        "details": [
+            "Æble, ananas, vanille & smør",
+            "Mellemkraftig krop",
+            "Halvtør",
+            "Lav på tannin"
+        ],
+        "tabFeatures": "Smag af æble, ananas, vanille & smør. Dette er en halvtør vin.",
+        "tabHistory": "Chardonnay produceres i de fleste lande, men især Sydamerika og Frankrig gør det godt.",
+        "tabTasting": "Denne drue passer til de fleste fjerkræsretter, fisk og særligt skaldyr."
+    },
+    {
+        "id": "500",
+        "color": "Røde",
+        "class": "small",
+        "img_url": "/images/grapes/cab.png",
+        "title": "Carbernet Sauvignon",
+        "tags": "#Blådrue #Mediumkrop",
+        "info": "Denne drue giver mellemkraftig vin",
+        "details": [
+            "Kirsebær, solbær, vanille & cedertræ",
+            "Mellemkraftig krop"
+        ],
+        "tabFeatures": "Kirsebær, solbær, vanille & cedertræ.",
+        "tabHistory": "Cabernet Sauvignon er den bedst sælgende rødvinsdrue på verdensplan.",
+        "tabTasting": "Passer godt til alle slags kødretter."
+    },
+    {
+        "id": "600",
+        "color": "Hvide",
+        "class": "small",
+        "img_url": "/images/grapes/SauvBlanc.png",
+        "title": "Sauvignon Blanc",
+        "tags": "#Hviddrue #Mellemkrop",
+        "info": "Denne drue giver en syreholdig vin",
+        "details": [
+            "Stikkelsbær, honningmelon, grape & passionsfrugt",
+            "Mellemlet krop",
+            "Tør",
+            "Mellemhøj syre",
+            "Ingen tanniner"
+        ],
+        "tabFeatures": "Smag af stikkelsbær, honningmelon, grape & passionsfrugt.",
+        "tabHistory": "Sauvignon blanc vine fra Sydfrankrig kan anbefales",
+        "tabTasting": "Denne drue passer til fisk, eller retter med fjerkræ."
+      
+    },
+    {
+        "id": "700",
+        "color": "Røde",
+        "class": "small",
+        "img_url": "/images/grapes/Malbec.png",
+        "title": "Malbec",
+        "tags": "#Røddrue #Kraftigkrop",
+        "info": "Denne drue giver kraftig vin med høj alkohol",
+        "details": [
+            "Blomme, brombær, vanille & cacao",
+            "Kraftig krop",
+            "Halvtør",
+            "Mellemhøj syre"
+        ],
+        "tabFeatures": "Smag af blomme, brombær, vanille og kakao. Tanniner er garvesyren, Rig på garvesyre = tanniner",
+        "tabHistory": "Malbec er Argentinas nationaldrue",
+        "tabTasting": "Denne drue passer exceptionelt godt sammen med røde steaks."
+       
+    },
+    {
+        "id": "800",
+        "color": "Hvide",
+        "class": "small",
+        "img_url": "/images/grapes/PinotBlanc.png",
+        "title": "Pinot Blanc",
+        "tags": "#Hviddrue #Letkrop",
+        "info": "Denne drue giver en let vin",
+        "details": [
+            "Pære, fersken, mandel & citron",
+            "Let krop",
+            "Halvtør",
+            "Mellemhøj syre"
+        ] ,
+        "tabFeatures": "Smag af fersken, pære, citron & mandel. Denne vin er halvtør.",
+        "tabHistory": "Pinot Blanc druen er oprindelig fra.....info følger",
+        "tabTasting": "Denne drue passer til fisk, som de fleste hvide vine gør. Kan dog også nydes som aperitif"
+      
+    },
+    {
+        "id": "900",
+        "color": "Hvide",
+        "class": "small",
+        "img_url": "/images/grapes/Riesling.png",
+        "title": "Riesling",
+        "tags": "#Hviddrue #Mediumkrop",
+        "info": "Denne drue giver en aromatisk vin",
+        "details": [
+            "Lime, æble, bivoks, jasmin & petroleum",
+            "Let krop",
+            "Ingen tanniner",
+            "Mellemhøj syre"
+        ],
+        "tabFeatures": "Smag af Lime, æble, bivoks, jasmin & petroleum. Ingen tanniner i denne drue, da tanniner findes i den røde skrald. Tanniner er garvesyren, som giver tørhed i ganen.",
+        "tabHistory": "Riesling fra Alsace i nordfrankrig er nogle af de bedste",
+        "tabTasting": "Denne drue passer til fisk, som de fleste hvide vine gør. Kan dog også nydes som aperitif"
+    }
+]
