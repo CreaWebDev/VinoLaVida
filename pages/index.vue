@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col h-screen">
-    <div class="w-1/2 pl-8 pt-16">
+    <div class="w-1/2 md:w-64 pl-8 pt-16">
       <img src="/images/wine_text.svg">
     </div>
     <p class="w-1/2 pl-8 text-sm mt-8">

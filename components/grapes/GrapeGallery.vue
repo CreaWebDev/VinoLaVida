@@ -18,17 +18,17 @@
         </button>
       </div>
       <button 
-        class="fixed bottom-20 right-2 md:left-80 text-golden w-16 h-10 bg-softPink rounded-lg"
+        class="fixed bottom-20 right-2 text-golden w-16 h-10 bg-softPink rounded-lg"
         @click="scrollToTop"  
       >
         <font-awesome :icon="faUpLong" />
       </button>
       <div class="flex flex-row w-full justify-between pt-2 px-2" >
         <button @click="showDropdown = !showDropdown" class="text-golden w-16 h-10 bg-softPink rounded-lg">
-          <font-awesome :icon="faChevronDown"></font-awesome>
-          <div class="absolute transition-all bg-softPink pt-4 pl-2" :class="showDropdown? 'show': 'hidden'">
+          <font-awesome :icon="showDropdown == true? faChevronUp : faChevronDown"></font-awesome>
+          <div class="absolute transition-all bg-softPink pt-4 pl-2 h-96 z-50 overflow-scroll" :class="showDropdown? 'show': 'hidden'">
             <ul v-for="g in grapeSelection" :key="g.id" >
-              <li class="text-left">
+              <li class="text-left" v-if="filter == 'All' || filter == g.type">
                 <NuxtLink
                   :href="`#${g.id}`"
                   @click="scrollToAnchor(g.name)"  
@@ -42,42 +42,33 @@
             </ul>
           </div>
         </button>
-        <button @click="toggleIsSeen" class="text-golden w-16 h-10 bg-softPink rounded-lg">
+        <button @click="toggleIsSeen" class="text-golden w-16 h-10 bg-softPink rounded-lg z-70">
           <font-awesome :icon="button.icon" size="xl"/>
         </button>
       </div>
     </div>
     <section class="flex md:flex-row flex-wrap justify-center md:justify-around">
-      <div class="mx-8 my-8"
+      <div class=""
         v-for="p in grapeSelection"
         :key="p.id"
         :id="p.id"
       >
-        <h3
-          class="text-lg text-golden text-center pb-2 z-40" 
-          :class="isSeen && (p.type == filter || filter == 'All') ? 'text-golden': 'text-gray'"
-        > {{ p.name }} 
-        </h3>
         <div 
           v-if="filter == p.type || filter == 'All'" 
-          class="w-52 h-52 md:w-52 md:h-52 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
+          class="w-52 h-52 mx-4 mt-8 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
           :class="p.type == 'red'? 'border-red' : 'border-yellow'"
           :style="{ backgroundImage: `url(/images/grapes${p.img_url})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition:  'bottom'}"
         >
-          <!-- <div class=" flex flex-row flex-wrap space-x-2">
-            <p v-for="t in p.taste" class="text-xs">{{ t }}</p>
-          </div> -->
-          
-          <!-- <nuxt-link :to="`/grapes/${p.id}`">
-            <img :src="p.img_url" >
-          </nuxt-link> -->
         </div>
         <div 
-          v-show="filter == p.type || filter == 'All'" 
+          v-if="filter == p.type || filter == 'All'" 
           class="relative -top-3"
         >
-          <img :src="'images/grapes/foot_'+ `${p.type}` +'.svg'" 
-          >
+          <img :src="'images/grapes/foot_'+ `${p.type}` +'.svg'" >
+          <h3 v-show="isSeen"
+            class="text-lg text-golden text-center z-40" 
+          > {{ p.name }} 
+          </h3>
         </div>
       </div>
       <NuxtPage :grapes="grapes" />
@@ -90,7 +81,7 @@ import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
 import grapes from '@/assets/grapes.json'
 
-import { faEye, faEyeSlash, faChevronDown, faUpLong } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
 const grapeSelection = ref<Grape[]>()
 
