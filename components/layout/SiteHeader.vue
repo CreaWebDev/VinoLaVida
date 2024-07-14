@@ -15,7 +15,6 @@ const isMobile = computed(() => {
 })
 
 onMounted(() => {
-  console.log(isMobile.value)
   windowInnerWidth.value = window.innerWidth
 })
 

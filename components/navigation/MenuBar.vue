@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-black flex flex-row justify-around fixed bottom-0 w-full md:w-96 z-50 p-4">
+  <div class="bg-black flex flex-row justify-around fixed bottom-0 w-full z-50 p-4">
     <div v-for="button in menuButtons" :key="button.id"
       :class="$route.path == button.linkTo ? 'opacity-1 border-b-2 border-white' : 'opacity-70'"
     >

@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full md:w-96 bg-gray">
+  <div class="w-full bg-gray">
     <div class="flex flex-col">
       <SiteHeader />
       <VinoLogo />
