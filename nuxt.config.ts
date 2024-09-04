@@ -7,7 +7,8 @@ export default defineNuxtConfig({
 
   modules: [
     '@vesp/nuxt-fontawesome',
-    'nuxt-anchorscroll'
+    'nuxt-anchorscroll',
+    '@nuxt/content'
   ],
 
   fontawesome: {

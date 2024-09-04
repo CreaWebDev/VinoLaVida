@@ -79,7 +79,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
-import grapes from '@/assets/grapes.json'
+const grapes = await queryContent('/grapes').findOne()
 
 import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -109,30 +109,7 @@ const toggleIsSeen = () => {
 }
 
 onMounted(() => {
-  grapeSelection.value = grapes.sort()
+  grapeSelection.value = grapes.body
 })
-// onBeforeMount(() => {
-//   fetch('./grapes.json', {
-//     method: 'GET',
-//     headers: {
-//       type: 'json'
-//     }
-//   })
-//   .then((response: any) => {
-//     response.json().then((data: any) => {
-//       console.log(data)
-//     })
-//   })
-//   .catch((error: string) => {
-//     console.log(error)
-//   })
-  // $axios
-  // .get("./grapes.json")
-  // .then(response =>  {
-  //   // (grapes.value = response.data.sort(sortBy))
-  //   console.log(response.data)
-  // })
-  // .catch(error => console.log(error))
 
-// })
     </script>
