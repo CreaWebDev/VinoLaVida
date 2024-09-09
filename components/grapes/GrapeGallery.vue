@@ -46,12 +46,11 @@
     </div>
     <section class="flex md:flex-row flex-wrap justify-center md:justify-around">
       <div class=""
-        v-for="p in grapeSelection"
+        v-for="p, index in grapeSelection"
         :key="p.ind"
-        :id="p.ind"
       >
         <NuxtLink
-          :to="`/grapes/${p.ind}`"
+          :to="`/grapes/${index}`"
           v-if="filter == p.type || filter == 'All'" 
           class="w-52 h-52 mx-4 mt-8 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
           :class="p.type == 'red'? 'border-red' : 'border-yellow'"
@@ -78,7 +77,6 @@
 import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
 import grapes from  '@/content/grapes.json'
-// const grapes = await queryContent('grapes').findOne()
 
 import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
