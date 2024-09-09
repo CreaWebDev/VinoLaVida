@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full sticky top-0 z-50">
+  <div class="w-full sticky top-0 z-40">
     <h3 class="px-4 pt-8">
       {{ props.grape?.name }}
     </h3>
