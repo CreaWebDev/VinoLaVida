@@ -36,9 +36,6 @@
                   {{ g.name }}
                 </NuxtLink>
               </li>
-              <!-- <a class="text-sm" :href="'#' + g.ind">
-                {{ g.name }}
-              </a> -->
             </ul>
           </div>
         </button>
@@ -80,7 +77,8 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
-const grapes = await queryContent('grapes').findOne()
+import grapes from  '@/content/grapes.json'
+// const grapes = await queryContent('grapes').findOne()
 
 import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -110,7 +108,7 @@ const toggleIsSeen = () => {
 }
 
 onMounted(() => {
-  grapeSelection.value = grapes.body
+  grapeSelection.value = grapes
 })
 
 </script>
