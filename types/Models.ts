@@ -1,5 +1,5 @@
 export interface Grape {
-  id:  number
+  ind:  number
   name: string
   img_url: string
   region: string

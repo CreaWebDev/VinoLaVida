@@ -27,16 +27,16 @@
         <button @click="showDropdown = !showDropdown" class="text-golden w-16 h-10 bg-softPink rounded-lg">
           <font-awesome :icon="showDropdown == true? faChevronUp : faChevronDown"></font-awesome>
           <div class="absolute transition-all bg-softPink pt-4 pl-2 h-96 z-50 overflow-scroll" :class="showDropdown? 'show': 'hidden'">
-            <ul v-for="g in grapeSelection" :key="g.id" >
+            <ul v-for="g in grapeSelection" :key="g.ind" >
               <li class="text-left" v-if="filter == 'All' || filter == g.type">
                 <NuxtLink
-                  :href="`#${g.id}`"
+                  :href="`#${g.ind}`"
                   @click="scrollToAnchor(g.name)"  
                 >
                   {{ g.name }}
                 </NuxtLink>
               </li>
-              <!-- <a class="text-sm" :href="'#' + g.id">
+              <!-- <a class="text-sm" :href="'#' + g.ind">
                 {{ g.name }}
               </a> -->
             </ul>
@@ -50,16 +50,17 @@
     <section class="flex md:flex-row flex-wrap justify-center md:justify-around">
       <div class=""
         v-for="p in grapeSelection"
-        :key="p.id"
-        :id="p.id"
+        :key="p.ind"
+        :id="p.ind"
       >
-        <div 
+        <NuxtLink
+          :to="`/grapes/${p.ind}`"
           v-if="filter == p.type || filter == 'All'" 
           class="w-52 h-52 mx-4 mt-8 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
           :class="p.type == 'red'? 'border-red' : 'border-yellow'"
           :style="{ backgroundImage: `url(/images/grapes${p.img_url})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition:  'bottom'}"
         >
-        </div>
+        </NuxtLink>
         <div 
           v-if="filter == p.type || filter == 'All'" 
           class="relative -top-3"
@@ -79,7 +80,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
-const grapes = await queryContent('/grapes').findOne()
+const grapes = await queryContent('grapes').findOne()
 
 import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
@@ -112,4 +113,4 @@ onMounted(() => {
   grapeSelection.value = grapes.body
 })
 
-    </script>
+</script>
