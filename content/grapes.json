@@ -151,7 +151,7 @@
       "history": "Sangiovese is a red wine grape variety originating from the Tuscany region of Italy. It is the primary grape used in wines such as Chianti and Brunello di Montalcino. Sangiovese-based wines are known for their bright acidity, firm tannins, and savory flavor profile.",
       "food_pairing": "Pairs well with tomato-based pasta dishes, pizza, grilled sausages, and aged cheeses like pecorino. Also complements dishes with herbs like rosemary and thyme.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 11,
@@ -164,7 +164,7 @@
       "history": "Tempranillo is a red wine grape variety originating from Spain, particularly the Rioja and Ribera del Duero regions. It is the backbone of many Spanish red wines, known for its versatility and aging potential. Tempranillo-based wines often exhibit flavors of red fruit, leather, and earthy notes.",
       "food_pairing": "Pairs well with grilled meats, roasted vegetables, cured meats like jamon iberico, and manchego cheese. Also complements dishes with smoky and savory flavors.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 12,
@@ -177,7 +177,7 @@
       "history": "Zinfandel is a red wine grape variety with origins that trace back to Croatia, but it gained fame in California, USA. It is known for producing bold and fruit-forward wines with high alcohol content. Zinfandel wines can range from rich and robust reds to sweet and spicy dessert wines.",
       "food_pairing": "Pairs well with barbecued meats, spicy sausages, and hearty stews. Also complements dishes with rich sauces and bold flavors.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 13,
@@ -190,7 +190,7 @@
       "history": "Chenin Blanc is a white wine grape variety originating from the Loire Valley in France. It is known for its versatility and ability to produce a wide range of wine styles, from dry to sweet and even sparkling wines. Chenin Blanc is also widely grown in South Africa.",
       "food_pairing": "Pairs well with seafood dishes, roasted poultry, spicy Asian cuisine, and soft cheeses. Also complements dishes with fruit-based sauces.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 14,
@@ -203,7 +203,7 @@
       "history": "Pinot Grigio, also known as Pinot Gris, is a white wine grape variety with origins in the Alsace region of France. It gained popularity in Italy, particularly in the Veneto region, where it is known for producing light and refreshing wines. Pinot Grigio is widely planted in various wine regions around the world.",
       "food_pairing": "Pairs well with light seafood dishes, salads, white fish, and mild cheeses. Also complements dishes with citrus and herbal flavors.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 15,
@@ -232,7 +232,7 @@
       "history": "Viognier is a white wine grape variety originating from the Northern Rhone region of France. It is known for its highly aromatic qualities, with intense floral and fruit notes. Viognier produces wines with medium acidity and a rich texture.",
       "food_pairing": "Pairs well with seafood dishes like crab cakes and lobster, chicken dishes with creamy sauces, and spicy Asian cuisine. Also complements dishes with tropical fruit flavors.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 17,
@@ -245,7 +245,7 @@
       "history": "Sémillon is a white wine grape variety originating from Bordeaux, France. It is known for its ability to produce full-bodied, complex wines with high alcohol content. Sémillon is often blended with Sauvignon Blanc to make Bordeaux Blanc and is also used to produce sweet wines like Sauternes.",
       "food_pairing": "Pairs well with rich seafood dishes like lobster, crab, and scallops. Also complements creamy sauces and dishes with tropical fruit flavors.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 18,
@@ -274,7 +274,7 @@
       "history": "Albariño is a white wine grape variety originating from the Galicia region of Spain. It is known for its crisp acidity and intense aromatics. Albariño is widely planted in the Rías Baixas region, where it produces refreshing and seafood-friendly wines.",
       "food_pairing": "Pairs well with seafood dishes like grilled shrimp, ceviche, and seafood paella. Also complements dishes with briny flavors like olives and capers.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 20,
@@ -287,7 +287,7 @@
       "history": "Garnacha, known as Grenache in France, is a red wine grape variety that likely originated in Spain. It is one of the most widely planted grape varieties globally and is known for its versatility in producing both single-varietal wines and blends. Garnacha/Grenache wines are characterized by their ripe fruit flavors and soft tannins.",
       "food_pairing": "Pairs well with grilled meats, such as lamb and pork, as well as dishes with Mediterranean herbs and spices. Also complements dishes with tomato-based sauces and grilled vegetables.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 21,
@@ -300,7 +300,7 @@
       "history": "Cabernet Franc is a red wine grape variety originating from the Bordeaux region of France. It is often used as a blending grape in Bordeaux-style blends, adding aromatic complexity and structure. Cabernet Franc is also grown as a single-varietal wine in regions like the Loire Valley, where it produces wines with herbaceous and fruity characteristics.",
       "food_pairing": "Pairs well with roasted poultry, grilled vegetables, and dishes with tomato-based sauces. Also complements dishes with fresh herbs and soft cheeses.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 22,
@@ -313,7 +313,7 @@
       "history": "Moscato, also known as Muscat, is a white wine grape variety known for its sweet and aromatic wines. It is one of the oldest grape varieties in the world, with a long history of cultivation in regions like Italy, France, and Spain. Moscato wines are often made in a range of styles, from dry to sweet, and are prized for their floral and fruity aromas.",
       "food_pairing": "Pairs well with fruity desserts such as peach cobbler and lemon tart, as well as spicy Asian cuisine. Also complements dishes with tangy cheeses like blue cheese.",
       "type": "white",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 23,
@@ -326,7 +326,7 @@
       "history": "Barbera is a red wine grape variety native to the Piedmont region of Italy. It is one of Italy's most planted grape varieties and is known for its high acidity and versatility. Barbera wines are often unoaked and fruit-forward, with vibrant acidity and soft tannins.",
       "food_pairing": "Pairs well with tomato-based pasta dishes, pizza, and roasted meats such as pork and duck. Also complements dishes with mushrooms and aged cheeses.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 24,
@@ -339,7 +339,7 @@
       "history": "Petit Verdot is a red wine grape variety originating from the Bordeaux region of France. It is primarily used as a blending grape to add color, tannin, and structure to Bordeaux-style blends. Petit Verdot produces deeply colored and intense wines with firm tannins and bold flavors.",
       "food_pairing": "Pairs well with grilled meats such as steak and lamb, as well as hearty stews and braised dishes. Also complements dishes with rich sauces and strong cheeses.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 25,
@@ -352,7 +352,7 @@
       "history": "Montepulciano is a red wine grape variety native to the Abruzzo region of Italy. It is known for its juicy fruit flavors and soft tannins, making it approachable in its youth. Montepulciano wines are often characterized by their vibrant acidity and versatility with food.",
       "food_pairing": "Pairs well with Italian dishes such as pasta with tomato-based sauces, pizza, and grilled sausages. Also complements dishes with mushrooms and aged cheeses.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     },
     {
       "ind": 26,
@@ -365,6 +365,6 @@
       "history": "Mourvèdre, known as Monastrell in Spain, is a red wine grape variety originating from the Rhone Valley of France. It is known for its thick skins and high tannin levels, producing wines with intense color and bold flavors. Mourvèdre/Monastrell is often used as a blending grape, adding structure and complexity to wines.",
       "food_pairing": "Pairs well with grilled meats such as lamb and beef, as well as dishes with rich, savory sauces. Also complements dishes with spicy flavors and strong cheeses.",
       "type": "red",
-      "img_url": "/dummy.svg"
+      "img_url": null
     }
 ]

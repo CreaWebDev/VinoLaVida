@@ -19,26 +19,11 @@
       </div>
       <button 
         class="fixed bottom-20 right-2 text-golden w-16 h-10 bg-softPink rounded-lg"
-        @click="scrollToTop"  
+        @click="scrollToTop()"  
       >
         <font-awesome :icon="faUpLong" />
       </button>
-      <div class="flex flex-row w-full justify-between pt-2 px-2" >
-        <button @click="showDropdown = !showDropdown" class="text-golden w-16 h-10 bg-softPink rounded-lg">
-          <font-awesome :icon="showDropdown == true? faChevronUp : faChevronDown"></font-awesome>
-          <div class="absolute transition-all bg-softPink pt-4 pl-2 h-96 z-50 overflow-scroll" :class="showDropdown? 'show': 'hidden'">
-            <ul v-for="g in grapeSelection" :key="g.ind" >
-              <li class="text-left" v-if="filter == 'All' || filter == g.type">
-                <NuxtLink
-                  :href="`#${g.ind}`"
-                  @click="scrollToAnchor(g.name)"  
-                >
-                  {{ g.name }}
-                </NuxtLink>
-              </li>
-            </ul>
-          </div>
-        </button>
+      <div class="flex flex-row w-full justify-end pt-2 px-2" >
         <button @click="toggleIsSeen" class="text-golden w-16 h-10 bg-softPink rounded-lg z-70">
           <font-awesome :icon="button.icon" size="xl"/>
         </button>
@@ -52,7 +37,7 @@
         <NuxtLink
           :to="`/grapes/${index}`"
           v-if="filter == p.type || filter == 'All'" 
-          class="w-52 h-52 mx-4 mt-8 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
+          class="w-52 h-52 mt-8 flex flex-col border-4 rounded-b-full md:rounded-b-[84px]" 
           :class="p.type == 'red'? 'border-red' : 'border-yellow'"
           :style="{ backgroundImage: `url(/images/grapes${p.img_url})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat', backgroundPosition:  'bottom'}"
         >
@@ -78,7 +63,7 @@ import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
 import grapes from  '@/content/grapes.json'
 
-import { faEye, faEyeSlash, faChevronDown, faChevronUp, faUpLong } from '@fortawesome/free-solid-svg-icons'
+import { faEye, faEyeSlash, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
 const grapeSelection = ref<Grape[]>()
 
@@ -89,7 +74,7 @@ const button = {
   icon: faEyeSlash
 }
 
-const { scrollToAnchor, scrollToTop } = useAnchorScroll({
+const { scrollToTop } = useAnchorScroll({
   toTop: {
     scrollOptions: {
       behavior: 'smooth',
@@ -106,7 +91,7 @@ const toggleIsSeen = () => {
 }
 
 onMounted(() => {
-  grapeSelection.value = grapes
+  grapeSelection.value = grapes.filter(el => el.img_url != null)
 })
 
 </script>
