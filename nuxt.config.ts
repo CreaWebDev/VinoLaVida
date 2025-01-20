@@ -1,21 +1,17 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   alias: {
-    assets: "/<rootDir>/assets", // lillekunstner med??
+    assets: "/<rootDir>/assets",
     public: "/<rootDir>/public"
   },
 
   modules: [
     '@vesp/nuxt-fontawesome',
     'nuxt-anchorscroll',
-    '@nuxt/content'
+    '@nuxt/content',
+    "@nuxt/image",
+    '@pinia/nuxt'
   ],
-
-  fontawesome: {
-    // icons: {
-    //   brands: ['github']
-    // }
-  },
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],
   postcss: {

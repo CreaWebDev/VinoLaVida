@@ -1,5 +1,5 @@
 <template>
-  <div class="w-20 absolute top-10 right-2 z-50 ">
+  <div class="w-20 absolute top-10 right-2 z-40 ">
     <NuxtLink to="/">
       <img src="/images/vino_logo.svg">
     </NuxtLink>
