@@ -32,7 +32,7 @@
     <section class="flex md:flex-row flex-wrap justify-center md:justify-around">
       <div class=""
         v-for="p, index in grapeSelection"
-        :key="p.ind"
+        :key="index"
       >
         <NuxtLink
           :to="`/grapes/${index}`"
@@ -61,10 +61,27 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { type Grape } from '@/types/Models'
-import grapes from  '@/content/grapes.json'
+// import axios from 'axios'
+import grapes from  '@/static/grapes.json'
 
 import { faEye, faEyeSlash, faUpLong } from '@fortawesome/free-solid-svg-icons'
 
+// const fetchData = async () => {
+//   try {
+//     const response = await fetch('/grapes.json')
+//     if (!response.ok) {
+//       throw new Error(`Error: ${response.statusText}`)
+//     }
+//     grapes.value = await response.json()
+//   } catch (err) {
+//     error.value = err.message;
+//   } finally {
+//     // last code goes here...if any
+//   }
+// };
+
+
+// const grapes = ref<Grape[]>()
 const grapeSelection = ref<Grape[]>()
 
 const filterList = ref(["red", "white"])
@@ -91,6 +108,7 @@ const toggleIsSeen = () => {
 }
 
 onMounted(() => {
+  // fetchData()
   grapeSelection.value = grapes.filter(el => el.img_url != null)
 })
 

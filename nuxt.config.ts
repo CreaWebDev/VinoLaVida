@@ -10,7 +10,7 @@ export default defineNuxtConfig({
     'nuxt-anchorscroll',
     '@nuxt/content',
     "@nuxt/image",
-    '@pinia/nuxt'
+    '@pinia/nuxt',
   ],
   devtools: { enabled: true },
   css: ['~/assets/css/main.css'],

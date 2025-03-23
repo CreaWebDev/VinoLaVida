@@ -26,7 +26,7 @@ export default {
     },
     fontFamily: {
       'sans': ['Arial'],
-      'display': ['Annie Use Your Telescope']
+      'display': ['Italiana']
     },
     extend: {
       keyframes: {

@@ -1,7 +1,7 @@
 <template>
   <footer class="z-10 text-black mb-20">
     <div class='flex justify-center text-sm'>
-      © 2024 Pia Roel Jørgensen <br>
+      © 2025 Pia Roel Jørgensen <br>
       Idea / Design / Development 
     </div>
   </footer>

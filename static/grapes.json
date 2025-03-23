@@ -1,0 +1,178 @@
+[
+    {
+      "id": 1,
+      "name": "Cabernet Sauvignon",
+      "region": "Bordeaux, France",
+      "flavor_profile": "Full-bodied, rich black currant, cedar, and tobacco notes",
+      "taste": [
+        "Cherry", "Blackberry", "Blueberry", "Blackcurrant"
+      ],
+      "acidity": "Medium to High",
+      "tannins": "High",
+      "color": "Deep red",
+      "history": "Cabernet Sauvignon is one of the most widely recognized red wine grape varieties. It has origins in the Bordeaux region of France, where it is often blended with Merlot and Cabernet Franc. Its global popularity soared in the 20th century, particularly in regions like California, where it produces bold and complex wines.",
+      "food_pairing": "Pairs well with red meat dishes such as grilled steak, lamb, and beef stew. Also complements hard cheeses like aged cheddar and gouda.",
+      "type": "red",
+      "img_url": "/cab.png"
+    },
+    {
+      "id": 2,
+      "name": "Chardonnay",
+      "region": "Burgundy, France",
+      "flavor_profile": "Buttery, with notes of Green-apple, citrus, and vanilla",
+      "taste": [
+        "Green-apple", "Pineapple", "Peach", "Apricot"
+      ],
+      "acidity": "Medium to High",
+      "tannins": "Low",
+      "color": "Light to medium golden",
+      "history": "Chardonnay is one of the most widely planted white grape varieties globally. Its origins trace back to the Burgundy region of France. It gained international fame for its versatility and ability to produce a wide range of wine styles, from crisp and unoaked to creamy and oaky.",
+      "food_pairing": "Pairs well with creamy pasta dishes, roasted chicken, seafood like lobster or crab, and creamy cheeses like brie and camembert.",
+      "type": "white",
+      "img_url": "/chardonnay.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Merlot",
+      "region": "Bordeaux, France",
+      "flavor_profile": "Soft and velvety, with flavors of plum, black cherry, and herbs",
+      "taste": [
+        "Plum", "Cherry", "Herbs"
+      ],
+      "acidity": "Medium",
+      "tannins": "Medium",
+      "color": "Medium ruby",
+      "history": "Merlot is a red wine grape variety with origins in the Bordeaux region of France. It gained popularity for its smooth texture and approachable flavors. Merlot-based wines are often blended with Cabernet Sauvignon and Cabernet Franc.",
+      "food_pairing": "Pairs well with roasted chicken, grilled pork, mushroom dishes, and medium-aged cheeses like gouda and gruyere.",
+      "type": "red",
+      "img_url": "/merlot.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Pinot Noir",
+      "region": "Burgundy, France",
+      "flavor_profile": "Delicate, with red fruit flavors like cherry, raspberry, and vanilla",
+      "taste": [
+        "Cherry", "Rasberry", "Mushroom", "Vanilla"
+      ],
+      "acidity": "High",
+      "tannins": "Low to Medium",
+      "color": "Light ruby",
+      "history": "Pinot Noir is one of the oldest grape varieties in the world, with origins dating back to the Burgundy region of France. It is known for its delicacy and transparency, often reflecting the terroir where it is grown. Pinot Noir has gained international acclaim, particularly from regions like Burgundy, Oregon, and New Zealand.",
+      "food_pairing": "Pairs well with grilled salmon, roasted duck, mushroom risotto, and soft cheeses like brie and camembert.",
+      "type": "red",
+      "img_url": "/pinotNoir.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Sauvignon Blanc",
+      "region": "Bordeaux, France",
+      "flavor_profile": "Crisp and refreshing, with notes of Green-apple, lime, and grass",
+      "taste": [
+        "Green-apple", "Gooseberry", "Lime", "Passionfruit"
+      ],
+      "acidity": "High",
+      "tannins": "Low",
+      "color": "Pale straw",
+      "history": "Sauvignon Blanc is a white wine grape variety originating from the Bordeaux region of France. It has gained popularity for its vibrant acidity and aromatic qualities. Sauvignon Blanc is widely planted in regions like New Zealand, California, and the Loire Valley in France.",
+      "food_pairing": "Pairs well with seafood dishes like oysters, shrimp, and ceviche. Also complements salads, goat cheese, and dishes with tangy sauces.",
+      "type": "white",
+      "img_url": "/sauvBlanc.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Shiraz",
+      "region": "Rhone Valley, France",
+      "flavor_profile": "Full-bodied, with dark fruit flavors like blueberry, plum, and pepper",
+      "taste": [
+        "Blueberry", "Plum", "Black-pepper", "Chocolate"
+      ],
+      "acidity": "Medium",
+      "tannins": "High",
+      "color": "Deep purple",
+      "history": "Syrah, also known as Shiraz in some regions, has origins in the Rhone Valley of France. It is one of the darkest red wine grape varieties, known for its bold flavors and rich texture. Syrah is also widely planted in regions like Australia, where it is known as Shiraz.",
+      "food_pairing": "Pairs well with grilled meats such as lamb chops, barbecued ribs, and steak. Also complements dishes with bold flavors like spicy stews and smoked meats.",
+      "type": "red",
+      "img_url": "/shiraz.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Riesling",
+      "region": "Mosel, Germany",
+      "flavor_profile": "Aromatic, notes of minerals, flavors of peach, apricot, and honey, often with a hint of petrol",
+      "taste": [
+        "Lime", "Apricot", "Petroleum", "Minerals"
+      ],
+      "acidity": "High",
+      "tannins": "Low",
+      "color": "Pale yellow",
+      "history": "Riesling is a white wine grape variety originating from the Rhine region of Germany. It is known for its aromatic qualities, high acidity, and ability to express terroir. Riesling wines range from bone-dry to intensely sweet, depending on the ripeness of the grapes at harvest.",
+      "food_pairing": "Pairs well with spicy dishes like Thai curry, smoked salmon, pork chops, and spicy Asian cuisine. Also complements blue cheeses and fruit-based desserts.",
+      "type": "white",
+      "img_url": "/riesling.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Grenache",
+      "region": "Rhone Valley, France",
+      "flavor_profile": "Medium-bodied, with flavors of red fruit, spice, and herbs",
+      "taste": [
+        "Herbs", "Strawberry", "Plum", "Orange"
+      ],
+      "acidity": "Low to Medium",
+      "tannins": "Low",
+      "color": "Light ruby",
+      "history": "Grenache is a red wine grape variety originating from the Aragon region of Spain. It is widely planted in the Rhone Valley of France and other warm climate regions around the world. Grenache-based wines are known for their ripe fruit flavors and soft tannins.",
+      "food_pairing": "Pairs well with Mediterranean dishes like grilled vegetables, ratatouille, and lamb kebabs. Also complements dishes with savory herbs and spices.",
+      "type": "red",
+      "img_url": "/grenache.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Malbec",
+      "region": "Cahors, France",
+      "flavor_profile": "Full-bodied, with flavors of blackberry, plum, and cocoa",
+      "taste": [
+        "Blackberry", "Plum", "Tobacco", "Cocoa"
+      ],
+      "acidity": "Medium",
+      "tannins": "Medium to High",
+      "color": "Deep purple",
+      "history": "Malbec is a red wine grape variety originating from the Cahors region of France. It gained prominence in Argentina, where it produces deeply colored and robust wines. Malbec is known for its dark fruit flavors and firm tannins.",
+      "food_pairing": "Pairs well with grilled meats like steak and ribs, barbecue dishes, and hearty stews. Also complements aged cheeses and dishes with earthy flavors.",
+      "type": "red",
+      "img_url": "/malbec.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Gewurztraminer",
+      "region": "Alsace, France",
+      "flavor_profile": "Aromatic, with flavors of lychee, rose, and spice",
+      "taste": [
+        "Ginger", "Lychee", "Grapefruit", "Vanilla"
+      ],
+      "acidity": "Low to Medium",
+      "tannins": "Low",
+      "color": "Pale yellow",
+      "history": "Gewurztraminer is a white wine grape variety originating from the Alsace region of France. It is known for its aromatic intensity and distinctive flavors. Gewurztraminer wines are often off-dry to sweet, with a rich texture and exotic fruit flavors.",
+      "food_pairing": "Pairs well with spicy Asian dishes, roasted pork, and rich cheeses like munster. Also complements fruit-based desserts and dishes with aromatic spices.",
+      "type": "white",
+      "img_url": "/gewurzt.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Carmenere",
+      "region": "Chile",
+      "flavor_profile": "Medium to full-bodied, with flavors of dark fruit, bell pepper, and spice",
+      "taste": [
+        "Green-Bell-Pepper", "Plum", "Raspberry", "Paprika"
+      ],
+      "acidity": "Medium",
+      "tannins": "Medium",
+      "color": "Deep ruby",
+      "history": "Carménère is a red wine grape variety originating from Bordeaux, France. It was widely planted in Bordeaux until the phylloxera epidemic in the 19th century nearly wiped it out. Today, Carménère is primarily associated with Chile, where it produces deeply colored and aromatic wines.",
+      "food_pairing": "Pairs well with grilled meats like steak and lamb, spicy Mexican cuisine, and hearty pasta dishes. Also complements dishes with smoky flavors.",
+      "type": "red",
+      "img_url": "/Carmenere.jpg"
+    }
+]
