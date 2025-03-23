@@ -10,7 +10,7 @@
 import { ref } from 'vue'
 import GrapeVariant from '@/components/grapes/GrapeVariant.vue'
 import { type Grape } from '@/types/Models'
-import currentGrape from '@/content/grapes.json'
+import currentGrape from '@/static/grapes.json'
 const route = useRoute()
 
 const grape = ref<Grape>()

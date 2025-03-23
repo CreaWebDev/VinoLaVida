@@ -1,11 +1,23 @@
 <template>
   <div id="grape_gallery" class="pt-12">
-    <button @click="showCompareOverlay = true"
-      ref="comp_btn"
-      v-show="store.userSelection.length > 2"
-      class="flex place-self-center w-40 bg-golden text-softPink justify-center rounded hover:font-bold hover:bg-golden hover:text-softPink animate-bounce"
-    >COMPARE</button>
-    
+    <div class="sticky top-10 flex flex-row justify-between pb-4">
+      <button @click="showCompareOverlay = true" :disabled="store.userSelection.length < 1"
+        ref="comp_btn"
+        class="w-1/2 mr-4 bg-golden text-softPink justify-center rounded hover:font-bold disabled:font-normal hover:bg-golden hover:text-softPink"
+      >
+        <p v-if="store.userSelection.length < 2">
+          Pick your grapes
+        </p>
+        <p v-else>
+          COMPARE
+        </p>
+      </button>
+      <button @click="store.resetUserSelection"
+        v-show="store.userSelection.length"
+        class="w-1/2 ml-4 bg-golden text-softPink justify-center rounded hover:font-bold hover:bg-golden hover:text-softPink"
+      >RESET
+      </button>
+    </div>
     <div class="bg-softPink text-golden w-full flex flex-row flex-wrap justify-around space-x-4 ">
       <div  
         v-for="(g, index) in store.grapesToCompare" :key="( g as Grape).ind"
@@ -18,10 +30,6 @@
           <font-awesome :icon="faEraser" />
         </p> 
       </div>
-      <button @click="store.resetUserSelection"
-        v-show="store.userSelection.length"
-        class="flex place-self-end text-sm hover:font-bold"
-      >RESET</button>
     </div>
     <section class="flex md:flex-row flex-wrap justify-center md:justify-around">
       <div class=""
@@ -42,7 +50,13 @@
         </h3>
       </div>
     </section>
-    <div v-if="showCompareOverlay">
+    <!-- <div v-if="showCompareOverlay" class="rotate-prompt w-screen h-full fixed top-0 left-0 z-50 bg-black text-white">
+      <div class="w-16 ml-16 pt-20 device">
+        <img src="/images/guides/device_soft.png" > 
+      </div>
+      <p class="text-left ml-16 pt-20 text-2xl font-display">Rotate screen for best<br> user experience</p>
+    </div> -->
+    <div v-if="showCompareOverlay" class="">
       <CompareOverlay 
         :listOfSelectedGrapes="store.grapesToCompare" 
         @close-modal="showCompareOverlay = false"
@@ -57,7 +71,7 @@ import CompareOverlay from './CompareOverlay.vue'
 import { useUserStore } from '@/stores/user'
 import { type Grape } from '@/types/Models'
 //make pseudo api call for this
-import grapes from  '@/content/grapes.json'
+import grapes from  '@/static/grapes.json'
 
 import { faEraser } from '@fortawesome/free-solid-svg-icons'
 
@@ -89,3 +103,30 @@ onMounted(() => {
 })
 
 </script>
+
+<style lang="css">
+
+@keyframes device{
+  /* from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(90deg)
+  }
+}
+.device {
+  animation: device 1500ms infinite ease;
+  transform-origin: bottom;
+}
+
+@media only screen and (orientation: landscape) {
+  .rotate-view {
+    flex-direction: column;
+  }
+
+  .rotate-prompt  {
+    display: none;
+  } */
+}
+
+</style>
